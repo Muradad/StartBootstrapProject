@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/src/css/img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.container{
+    padding-top: 30px;
+}
+.logo a{
+    float: left;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.navbar a{
+    float: right;
+    margin-right: 20px;
+    text-decoration: none ;
+    color: white;
+    text-transform: uppercase;
+}
+.home-content{
+    position: relative;                      ;
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    text-align: center;
+}
+.home-content h2{
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+.home-content h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+    color: white;
+    text-transform: uppercase;
+}
+.home-content a{
+    color: white;
+    text-decoration: none;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    background-color: yellowgreen;
+    border-radius: 8px;
+}
+/* home end */
+#services{
+    width: 100%;
+    height: 600px;
+}
+.services-content{
+    text-align: center;
+}
+.services-portfolio-grid{
+   width: 100%;
+   padding-top: 160px;
+}
+.item{
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+    text-align: center;
+}
+
+/* portfolio start */
+
+#portfolio{
+    width: 100%;
+    height:1200px;
+}
+.header{
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 2rem;
+}
+.port-grid {
+    overflow: hidden; 
+}
+.port-item {
+    width: calc(32%); 
+    margin-bottom: 130px; 
+    margin-right: 20px; 
+    float: left;
+}
+
+.port-item img {
+    width: 100%;
+    height: auto;
+}
+.port-item {
+    position: relative; /* Pozisyonu göreceli yapar */
+    overflow: hidden; /* İçeriğin taşan kısımlarını gizler */
+}
+
+.port-item img {
+    transition: filter 0.3s; /* Geçiş efekti için */
+}
+
+.port-item:hover img {
+    filter: brightness(80%); /* Hover edildiğinde parlaklığı azaltır */
+}
+
+.port-item::before {
+    content: ""; /* Boş içerik */
+    position: absolute; /* Pozisyonu mutlak yapar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.428); /* Arka plan rengi */
+    opacity: 0; /* Başlangıçta görünmez yapar */
+    transition: opacity 0.3s; /* Geçiş efekti için */
+    z-index: 999;
+}
+
+.port-item:hover::before {
+    opacity: 1; /* Hover edildiğinde görünür yapar */
+}
+
+/* team start */
+
+
+
+
+
+#team{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(240, 240, 240), 255);
+}
+.team-grid{
+    width: 100%;
+    padding-top: 160px;
+ }
+ .team-item{
+     float: left;
+     width: 30%;
+     margin-left: 20px;
+     text-align: center;
+ }
+ .team-content{
+    text-align: center;
+ }
+
+ .team-item img{
+    width: 14rem;
+    border: 5px solid gray;
+    border-radius: 50%;
+
+ }
+ /* contact */
+
+ #contact{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/src/css/img/map-image.png);
+    background-color: #212529;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+ form {
+    width: 50%;
+    margin:  -80px 100px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: brown;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+
+    width: 70%;
+    padding: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    display: block;
+}
+form{
+    position: relative;
+}
+form textarea{
+    position: absolute;
+    bottom: 322%;
+    left: 85%;
+    width: 70%;
+    height: 100%;
+    display: block;
+}
+
+.btn{
+    padding: 30px 30px;
+    background-color: yellow;
+}
+/* footer */
